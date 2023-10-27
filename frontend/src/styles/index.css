@@ -1,0 +1,233 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,500;0,600;0,700;0,800;0,900;0,1000;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,800&display=swap');
+body {
+  /* font-family: 'Rubik', sans-serif; */
+  font-family: 'Nunito Sans', sans-serif;
+
+  margin-top: 52px;
+  width: auto;
+  overflow-x: hidden;
+}
+
+/* Hero */
+.hero {
+  padding: 7px;
+}
+
+.hero-subtitle {
+  padding: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hero-subtitle-bud {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero-item {
+  margin-top: 0.3px;
+}
+
+.media-il {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+}
+
+.cat-tag {
+  margin-top: 2%;
+}
+
+.item-mon {
+  text-align: right;
+}
+
+/* Budget Page */
+.home-cont {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+@media (max-width:480px){
+  .home-cont {
+    margin-bottom: -3%;
+  }
+}
+
+.net-font {
+  font-style: bold;
+  font-weight: 800;
+  font-family: 'Fugaz One', cursive;
+}
+
+.tile-bud {
+  padding: 5%;
+}
+
+.bud-item-mon {
+  text-align: right;
+  color:white;
+}
+
+.bud-imp {
+  background-color: #282a2b;
+  color: rgb(248, 248, 248);
+}
+
+.bud-item-title {
+  /* font-family: 'Fugaz One', cursive; */
+  font-size: 22px;
+  color:rgb(248, 248, 248);
+  font-weight: 500;
+}
+
+.written-progress {
+  margin-top: 5%;
+  margin-right: 2px;
+  /* font-family: 'Fugaz One', cursive; */
+}
+
+.bud-edit-icon {
+  font-size: 18px;
+}
+
+.bud-edit-button {
+  background-color: #ffffff00;
+  border: 0;
+  margin-top: 1px;
+}
+
+
+.upcoming-title {
+  margin-bottom: 7%;
+}
+
+/* Form */
+input[type='radio']:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+  border: 5px solid rgb(0, 209, 178);
+}
+
+input[type='radio']:checked:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: hsl(171, 100%, 41%);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+}
+
+.tag-container {
+  padding-top: 4%;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Monthly Chart */
+.mon-hero-title {
+  font-size: 23px;
+
+  font-family: 'Fugaz One', cursive;
+  font-style: bold;
+  font-weight: 800;
+}
+
+.mon-hero-icon {
+  margin-top: 7px;
+}
+
+.item-date-col {
+  min-width: 10%;
+}
+
+.fold-icon {
+  margin-top: 4px;
+}
+
+.hero-title {
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.add-button {
+  position: fixed;
+  bottom: 12px;
+  right: 1%;
+  background-color: rgba(255, 255, 255, 0.676);
+  border: none;
+  font-size: 23px;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 15px;
+  padding: 11px;
+}
+
+.nav-item {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-logo {
+  font-family: 'Fugaz One', cursive;
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+/* ItemList */
+.no-item-alert-icon {
+  margin-top: 35px;
+  font-size: 90px;
+  text-align: center;
+}
+
+.no-item-alert {
+  font-size: 22px;
+  font-family: 'Fugaz One', cursive;
+  text-align: center;
+  margin-top: -10px;
+  color: #141414;
+}
+
+
+/* Delete after adding actual chart */
+.monthlyChartEx {
+  width: 300px;
+  margin-left: 45px;
+}
+

@@ -1,0 +1,48 @@
+.layover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(100, 100, 100, 0.15);
+}
+
+.error-message {
+  width: 80%;
+}
+
+/* This fires as soon as the element enters the DOM */
+.popup-transition-enter, .popup-transition-appear {
+  top: 5%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+/* This is where we can add the transition*/
+.popup-transition-enter-active, .popup-transition-appear-active {
+  top: 0;
+  opacity: 1;
+  background-color: rgba(100, 100, 100, 0.15);
+  transition: all ease-in-out 0.5s;
+}
+/* This fires as soon as the state is false */
+.popup-transition-exit {
+  top: 0;
+  opacity: 1;
+  background-color: rgba(100, 100, 100, 0.15);
+  
+}
+/* fires as element leaves the DOM*/
+.popup-transition-active {
+  top: 5%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all ease-in 0.5s;
+}

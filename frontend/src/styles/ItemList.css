@@ -1,0 +1,51 @@
+.container {
+  background-color: white;
+}
+
+.btn-container {
+  background-color: rgba(255, 255, 255, 0.489);
+  display: flex;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container > button {
+  margin: 0.3em;
+  /* box-shadow: 5px 5px #88888819; */
+}
+
+/* This fires as soon as the element enters the DOM */
+.btn-with-anim-enter, .list-transition-appear {
+  z-index: -10;
+  top: 100%;
+  opacity: 0;
+}
+/* This is where we can add the transition*/
+.btn-with-anim-enter-active, .list-transition-appear-active {
+  z-index: 10;
+  top: 0;
+  opacity: 1;
+  transition: all ease-in 0.5s;
+}
+/* This fires as soon as the state is false */
+.btn-with-anim-exit {
+  top: 0;
+  opacity: 1;
+}
+/* fires as element leaves the DOM*/
+.btn-with-anim-exit-active {
+  z-index: -10;
+  top: 100%;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+
+&.btn-bg {
+  opacity: 0;
+  transition: all ease-in 0.2s;
+}
